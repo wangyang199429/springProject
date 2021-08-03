@@ -1,0 +1,19 @@
+
+
+server:
+  port: 8080
+  jetty:
+    accesslog:
+      append: true
+    enabled: 23
+
+
+
+spring:
+  redis:
+    timeout:
+    port: 1212
+    database:
+
+
+

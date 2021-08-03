@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="video" class="net.xdclass.sp.domain.Video" scope="singleton" init-method="init" destroy-method="destroy">
+
+        <property name="id" value="9"/>
+        <property name="title" value="Spring 5.X课程" />
+
+    </bean>
+
+
+    <!--<bean id="video2" class="net.xdclass.sp.domain.Video2" scope="singleton" parent="video">-->
+
+        <!--<property name="summary" value="这个是summary"></property>-->
+
+    <!--</bean>-->
+
+
+
+
+
+    <!--设置两个bean的关系，video要先于videoOrder实例化-->
+
+    <!--<bean id="videoOrder" class="net.xdclass.sp.domain.VideoOrder" depends-on="video">-->
+        <!--<property name="id" value="8" />-->
+        <!--<property name="outTradeNo" value="23432fnfwedwefqwef2"/>-->
+        <!--<property name="video" ref="video"/>-->
+    <!--</bean>-->
+
+
+
+
+</beans>
